@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelotanding</title>
+    <link rel="icon" href="img/faviconPeloteanding.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estiloMapa.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div><a href="index.html"><img src="img/logo.png" alt="Logo Peloteanding" id="logo"></a></div>
+            <div>
+                <nav>
+                    <ul class="menu">
+                        <div><a href="index.html">
+                                <li>inicio</li>
+                            </a></div>
+                        <div><a href="productos.html">
+                                <li>productos</li>
+                            </a></div>
+                        <div><a href="#resenas">
+                                <li>reseñas</li>
+                            </a></div>
+                        <div><a href="#formularioDeContacto">
+                                <li>contáctanos</li>
+                            </a>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="inicioHome">
+            <h1>PELOTANDING</h1>
+            <p>No dudes más conseguí la pelota que estabas buscando...</p>
+            <a href="productos.html">COMPRAR</a>
+        </div>
+        <div id="resenas">
+            <h2>Nuestros clientes</h2>
+            <div class="resenas">
+                <div class="comentarioResena">
+                    <img src="img/varon1.png" alt="imagenPersonaReseña">
+                    <h3>Carlos</h3>
+                    <p>"Excelente servicio."</p>
+                </div>
+                <div class="comentarioResena">
+                    <img src="img/mujer.png" alt="imagenPersonaReseña">
+                    <h3>Giuliana</h3>
+                    <p>"Pelotas de alta calidad."</p>
+                </div>
+                <div class="comentarioResena">
+                    <img src="img/varon2.png" alt="imagenPersonaReseña">
+                    <h3>Daniel</h3>
+                    <p>"No conseguía en ningún lado esta pelota."</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div id="formularioDeContacto">
+            <form class="formularioDeContacto" action="https://formspree.io/f/manyyldy" method="POST">
+                <p>Dejanos tu consulta</p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email">
+                <label for="descripcion">Comentario: </label>
+                <textarea name="descripcion" id="descripcion" placeholder="Dejanos tu consulta..." rows="8" cols="23"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <section class="contenedorMapa">
+            <h2>Tambien nos encontramos en:</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9041185261012!2d-58.476656023508106!3d-34.58129257296245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6727999add1%3A0x5adbfbb581c421df!2sAv.%20de%20los%20Incas%204500%2C%20C1427%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1728246859516!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                id="mapa"></iframe>
+            <br>
+            <br>
+            <p>Colectivos líneas: 44, 65, 80, 87, 113, 123, 151, 168 y 184</p>
+            <p>Línea B: Estación Los Incas - Parque Chas</p>
+        </section>
+    </main>
+    <footer>
+        <div><a href="index.html"><img src="img/logo.png" alt="Logo Peloteanding" id="logo"></a></div>
+        <div>
+            <h3>Nuestros contactos: </h3>
+            <p>Tel: +54911-6887-0000</p>
+            <p>Mail: alvarezagustin23@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #243642;
+    color: #E2F1E7;
+}
+
+header div {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+header div div {
+    display:inline-flex;
+}
+
+main {
+    background: linear-gradient(#243642, #E2F1E7);
+}
+
+footer {
+    background-color: #E2F1E7;
+    color:#243642; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul li {
+    color:#E2F1E7; 
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+/*Menu de Navegacion*/
+
+.menu {
+    display:inline-flex;
+    justify-items: flex-end;
+}
+
+.menu div {
+    margin: 10px;
+}
+
+/*Inicio de la home*/
+
+#inicioHome {
+    display: flexbox;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#inicioHome h1 {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #E2F1E7; 
+}
+
+#inicioHome p {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #E2F1E7;
+}
+
+#inicioHome a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #243642;
+    background-color: #E2F1E7;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#inicioHome a:hover {
+    background-color: #243642;
+    color: #E2F1E7;
+}
+
+
+/*Estilo para las reseñas*/
+
+main {
+   justify-items: center;
+}
+
+.resenas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #E2F1E7;
+    max-width: 1000px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resenas div {
+    display: inline;
+    justify-items: center;
+}
+
+#resenas h2 {
+    text-align: center;
+    color: #243642;
+}
+
+.comentarioResena {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 10px;
+    align-items: start;
+    padding: 15px;
+    background-color: #243642;
+    color: #E2F1E7;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.comentarioResena img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comentarioResena h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #E2F1E7;
+}
+
+.comentarioResena p {
+    margin: 5px 0 0;
+    color: #E2F1E7;
+    font-size: 1em;
+}
+
+/*Estilo del formulario de contacto*/
+
+#formularioDeContacto {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #E2F1E7; /* Fondo suave para contraste */
+}
+
+.formularioDeContacto {
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    gap: 15px;
+    background-color: #243642;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de etiquetas */
+.formularioDeContacto label {
+    color: #E2F1E7;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.formularioDeContacto p {
+    color: #387478;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Estilo de los campos de entrada */
+.formularioDeContacto input,
+.formularioDeContacto textarea {
+    width: 100%;
+    max-width: max-content;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #E2F1E7;
+    border-radius: 5px;
+    background-color: #E2F1E7;
+    color: #243642;
+}
+
+/* Estilo del botón de envío */
+.formularioDeContacto button {
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #243642;
+    background-color: #E2F1E7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formularioDeContacto button:hover {
+    background-color: #C8DFDC;
+}
+
+/* Estilo responsivo */
+@media (max-width: 600px) {
+    #formularioDeContacto {
+        padding: 20px;
+    }
+
+    .formularioDeContacto {
+        padding: 15px;
+    }
+
+    .formularioDeContacto button {
+        font-size: 1em;
+    }
+}

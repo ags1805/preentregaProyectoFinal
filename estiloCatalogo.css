@@ -1,0 +1,36 @@
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+    /* Esto distribuye los productos con espacio entre ellos */
+    flex-wrap: wrap;
+    /* Esto hace que los productos se ajusten si no hay suficiente espacio en la misma línea */
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.producto {
+    flex: 1 1 20%;
+    /* Los productos ocuparán el 20% del ancho del contenedor, ajustándose al espacio disponible */
+    margin: 10px;
+    /* Espaciado entre productos */
+    padding: 20px;
+    /* Espacio interno del div */
+    border: 1px solid #ccc;
+    /* Bordes para visualizar los productos */
+    text-align: center;
+    /* Centrar el contenido */
+}
+
+main h3 {
+    font-size: 28px; 
+    font-weight: bold; 
+    color: #E2F1E7; 
+    text-align: center; 
+    padding: 10px;
+    margin: 20px 0; 
+    border-bottom: 1px solid #E2F1E7; /* Línea debajo del título */
+    background-color: #387478;
+    border-radius: 5px; /* Bordes redondeados */
+    max-width: 2000px;
+    margin: 0 auto;
+}
