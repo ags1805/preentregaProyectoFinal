@@ -4,27 +4,29 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth; /*es para que al hacer foco en una seccion de la pagina sea una transicion mas suave*/
+}
+
+
+body {
+    margin: 0% 15vw;
+    background: linear-gradient(#243642, #E2F1E7);
+}
+
+
 header {
-    background-color: #243642;
     color: #E2F1E7;
 }
 
 header div {
     display:flex;
-    justify-content: space-between;
-    align-items: center;  
+    align-items: center;
+    justify-content:space-between; 
 }
 
-header div div {
-    display:inline-flex;
-}
-
-main {
-    background: linear-gradient(#243642, #E2F1E7);
-}
 
 footer {
-    background-color: #E2F1E7;
     color:#243642; 
     display: flex;
     justify-content: space-between;
@@ -50,7 +52,7 @@ nav ul a {
 /*Menu de Navegacion*/
 
 .menu {
-    display:inline-flex;
+    display: flex;
     justify-items: flex-end;
 }
 
@@ -61,19 +63,19 @@ nav ul a {
 /*Inicio de la home*/
 
 #inicioHome {
-    display: flexbox;
     align-items: center;
-    width: 100%;
     height: 300px;
     padding: 50px 20px;
     text-align: center;
 }
 
 #inicioHome h1 {
-    font-size: 100px;
+
     font-weight: bold;
-    margin: 0;
-    padding: 0;
+    font-size: 5em;
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 0px 20px;
     color: #E2F1E7; 
 }
 
@@ -110,11 +112,10 @@ main {
 
 .resenas {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     background-color: #E2F1E7;
-    max-width: 1000px;
     border-radius: 5px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -130,8 +131,7 @@ main {
 }
 
 .comentarioResena {
-    display: grid;
-    grid-template-columns: 60px 1fr;
+    
     gap: 10px;
     align-items: start;
     padding: 15px;
@@ -228,6 +228,35 @@ main {
 
 /* Estilo responsivo */
 @media (max-width: 600px) {
+
+    #logo {
+        width: 40px;
+        height: auto;
+    }
+
+    nav {
+        font-size: 0.9em;
+    }
+
+    /* Centrar el texto del título principal */
+    
+    #inicioHome h1 {
+        
+        font-size: 3em;
+        box-sizing: border-box;
+        margin: 15px;
+        padding: 0px 20px;
+        color: #E2F1E7; 
+    }
+
+    header {
+        justify-content: space-between;
+        /* text-align: center; Centra el contenido del header */
+        padding: 10px;
+    }
+
+    /*formularioDeContacto*/
+
     #formularioDeContacto {
         padding: 20px;
     }
@@ -239,4 +268,14 @@ main {
     .formularioDeContacto button {
         font-size: 1em;
     }
+
+     /*reseñas*/
+
+     .resenas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Una sola columna en móvil */
+        gap: 10px;
+        margin: 0 auto;
+        width: 90%;
+}
 }

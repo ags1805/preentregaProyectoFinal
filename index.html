@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelotanding</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="img/faviconPeloteanding.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="estiloMapa.css">
@@ -28,8 +32,7 @@
                             </a></div>
                         <div><a href="#formularioDeContacto">
                                 <li>contáctanos</li>
-                            </a>
-                        </div>
+                            </a></div>
                     </ul>
                 </nav>
             </div>
@@ -41,26 +44,26 @@
             <p>No dudes más conseguí la pelota que estabas buscando...</p>
             <a href="productos.html">COMPRAR</a>
         </div>
-        <div id="resenas">
-            <h2>Nuestros clientes</h2>
-            <div class="resenas">
-                <div class="comentarioResena">
-                    <img src="img/varon1.png" alt="imagenPersonaReseña">
-                    <h3>Carlos</h3>
-                    <p>"Excelente servicio."</p>
+        <section id="resenas">
+                <h2>Nuestros clientes</h2>
+                <div class="resenas">
+                    <div class="comentarioResena">
+                        <img src="img/varon1.png" alt="imagenPersonaReseña">
+                        <h3>Carlos</h3>
+                        <cite>"Excelente servicio."</cite>
+                    </div>
+                    <div class="comentarioResena">
+                        <img src="img/mujer.png" alt="imagenPersonaReseña">
+                        <h3>Giuliana</h3>
+                        <cite>"Pelotas de alta calidad."</cite>
+                    </div>
+                    <div class="comentarioResena">
+                        <img src="img/varon2.png" alt="imagenPersonaReseña">
+                        <h3>Daniel</h3>
+                        <cite>"No conseguía en ningún lado esta pelota."</cite>
+                    </div>
                 </div>
-                <div class="comentarioResena">
-                    <img src="img/mujer.png" alt="imagenPersonaReseña">
-                    <h3>Giuliana</h3>
-                    <p>"Pelotas de alta calidad."</p>
-                </div>
-                <div class="comentarioResena">
-                    <img src="img/varon2.png" alt="imagenPersonaReseña">
-                    <h3>Daniel</h3>
-                    <p>"No conseguía en ningún lado esta pelota."</p>
-                </div>
-            </div>
-        </div>
+        </section>
         <br>
         <br>
         <div id="formularioDeContacto">
@@ -71,7 +74,8 @@
                 <label for="email">E-mail: </label>
                 <input type="email" name="email" id="email">
                 <label for="descripcion">Comentario: </label>
-                <textarea name="descripcion" id="descripcion" placeholder="Dejanos tu consulta..." rows="8" cols="23"></textarea>
+                <textarea name="descripcion" id="descripcion" placeholder="Dejanos tu consulta..." rows="8"
+                    cols="23"></textarea>
                 <button type="submit">Enviar</button>
             </form>
         </div>
